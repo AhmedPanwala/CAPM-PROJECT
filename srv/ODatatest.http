@@ -1,0 +1,88 @@
+GET http://localhost:4004/odata/v4/catalogservice/address HTTP/1.1
+
+###
+
+GET http://localhost:4004/odata/v4/catalogservice/product/2437b853-520c-4107-802a-dfc62e3749f2
+
+###
+
+POST http://localhost:4004/odata/v4/catalogservice/address HTTP/1.1
+Content-Type: application/json
+
+   {
+      "NODE_KEY": "7554a050-c6ea-426d-ab17-1791fdc7df",
+      "CITY": "Navsari",
+      "POSTAL_CODE": "396445",
+      "STREET": "Lunsiqui",
+      "BUILDING": "2",
+      "COUNTRY": "IN",
+      "ADDRESS_TYPE": "2",
+      "VAL_START_DATE": null,
+      "VAL_END_DATE": null,
+      "LATITUDE": 48.33182,
+      "LONGITUDE": 11.73696
+    }
+
+###
+
+PUT http://localhost:4004/odata/v4/catalogservice/address/7554a050-c6ea-426d-ab17-1791fdc7dd HTTP/1.1
+Content-Type: application/json
+
+{
+    "BUILDING": "3",
+    "COUNTRY": "INR"
+}
+###
+
+PATCH http://localhost:4004/odata/v4/catalogservice/address/b62a1a34-19d5-4b55-acd7-1dbebb6a HTTP/1.1
+Content-Type: application/json
+{
+    "STREET": "MG Road",
+  "BUILDING": "F-2"
+}
+###
+
+DELETE  http://localhost:4004/odata/v4/catalogservice/address/7554a050-c6ea-426d-ab17-1791fdc7dd HTTP/1.1
+
+###
+POST http://localhost:4004/odata/v4/catalog/worker HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Ahmed",
+  "lastname": "Panwala",
+  "gender": "M",
+  "phonenumber": "+919876543210",
+  "email": "ahmed.panwala@gmail.com",
+  "currency": "INR",
+  "salaryamount": 50000.50
+}
+
+###
+GET  http://localhost:4004/odata/v4/catalogservice/worker HTTP/1.1
+
+###
+DELETE http://localhost:4004/odata/v4/catalogservice/worker/ HTTP/1.1
+
+###
+GET http://localhost:4004/odata/v4/CDSViewsSrv/ProductSum HTTP/1.1
+
+###
+POST http://localhost:4004/odata/v4/CDSViewsSrv/ProductSum HTTP/1.1
+Content-Type: application/json
+
+{
+"ProductId": "HT2812",
+"Description": "Notre téléviseur haut de gamme pour une expérience de divertissement véritablement transformatrice.",
+"PO_SUM": 956
+}
+###
+POST http://localhost:4004/odata/v4/increment/hike HTTP/1.1
+Content-Type: application/json
+
+{
+   "Id":"08e89d3b-f4ef-4169-af19-cd728b8f5cf9"
+}
+
+###
+GET  http://localhost:4004/odata/v4/high-sal/getHighestSalary()  HTTP/1.1
