@@ -1,0 +1,14 @@
+VIEW CDSViewsSrv_PODetails AS SELECT
+  PODetails_0.purchaseorder,
+  PODetails_0.VendorID,
+  PODetails_0.CompanyName,
+  PODetails_0.POGrossAmount,
+  PODetails_0.POCurrency,
+  PODetails_0.ItemPosition,
+  PODetails_0.ProductId,
+  PODetails_0.ProductDesc,
+  PODetails_0.City,
+  PODetails_0.Country,
+  PODetails_0.ItemGrossAmount,
+  PODetails_0.ItemAmount
+FROM india_db_CDSviews_PODetails AS PODetails_0

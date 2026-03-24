@@ -1,0 +1,5 @@
+VIEW CDSViewsSrv_ProductSum AS SELECT
+  ProductSum_0.ProductId,
+  ProductSum_0.Description,
+  ProductSum_0.PO_SUM
+FROM india_db_CDSviews_ProductSum AS ProductSum_0

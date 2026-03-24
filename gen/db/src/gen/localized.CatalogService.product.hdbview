@@ -1,0 +1,18 @@
+VIEW localized_CatalogService_product AS SELECT
+  product_0.NODE_KEY,
+  product_0.PRODUCT_ID,
+  product_0.TYPE_CODE,
+  product_0.CATEGORY,
+  product_0.DESCRIPTION,
+  product_0.SUPPLIER_GUID_NODE_KEY,
+  product_0.TAX_TARIF_CODE,
+  product_0.MEASURE_UNIT,
+  product_0.WEIGHT_MEASURE,
+  product_0.WEIGHT_UNIT,
+  product_0.CURRENCY_CODE,
+  product_0.PRICE,
+  product_0.WIDTH,
+  product_0."DEPTH",
+  product_0.HEIGHT,
+  product_0.DIM_UNIT
+FROM localized_india_db_master_product AS product_0

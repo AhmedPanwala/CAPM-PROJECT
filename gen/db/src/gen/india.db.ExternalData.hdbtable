@@ -1,0 +1,7 @@
+COLUMN TABLE india_db_ExternalData (
+  userId INTEGER NOT NULL,
+  id INTEGER,
+  title NVARCHAR(50),
+  body NVARCHAR(100),
+  PRIMARY KEY(userId)
+)

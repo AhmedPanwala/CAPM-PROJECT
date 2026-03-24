@@ -1,0 +1,6 @@
+VIEW ExternalApiService_ExternalData AS SELECT
+  ExternalData_0.userId,
+  ExternalData_0.id,
+  ExternalData_0.title,
+  ExternalData_0.body
+FROM india_db_ExternalData AS ExternalData_0

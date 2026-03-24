@@ -6,7 +6,6 @@ service CatalogService {
     entity product as projection on master.product;
     entity purchase_order as projection on transaction.purchaseorder;
     entity poitem as projection on transaction.poitems;
-    @readonly
     entity worker as projection on master.worker;
 }
 
@@ -14,9 +13,9 @@ service CatalogService {
 //1. You can do perform only get req ->     @readonly
 
 //2.
-annotate CatalogService.businesspartner with @(
-    Capabilities:{
-        InsertRestrictions : {Insertable},
-    }
-);
+// annotate CatalogService.businesspartner with @(
+//     Capabilities:{
+//         InsertRestrictions : {Insertable},
+//     }
+// );
 

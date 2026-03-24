@@ -1,0 +1,14 @@
+VIEW increment_worker AS SELECT
+  worker_0.ID,
+  worker_0.createdAt,
+  worker_0.createdBy,
+  worker_0.modifiedAt,
+  worker_0.modifiedBy,
+  worker_0.firstName,
+  worker_0.lastname,
+  worker_0.gender,
+  worker_0.phonenumber,
+  worker_0.email,
+  worker_0.currency,
+  worker_0.salaryamount
+FROM india_db_master_worker AS worker_0

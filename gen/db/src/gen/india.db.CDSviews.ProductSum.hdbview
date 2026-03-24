@@ -1,0 +1,8 @@
+VIEW india_db_CDSviews_ProductSum AS SELECT
+  prod_0.PRODUCT_ID AS ProductId,
+  texts_2.DESCRIPTION AS Description,
+  (SELECT
+      SUM(a_1.GROSS_AMOUNT) AS "SUM"
+    FROM india_db_transaction_poitems AS a_1
+    WHERE a_1.PRODUCT_GUID_NODE_KEY = prod_0.NODE_KEY) AS PO_SUM
+FROM (india_db_master_product AS prod_0 LEFT JOIN india_db_master_product_texts AS texts_2 ON texts_2.NODE_KEY = prod_0.NODE_KEY)

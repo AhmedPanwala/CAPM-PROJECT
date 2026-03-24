@@ -1,0 +1,14 @@
+VIEW india_db_CDSviews_PODetails AS SELECT
+  purchaseorder_0.PO_ID AS purchaseorder,
+  PARTNER_GUID_1.BP_ID AS VendorID,
+  PARTNER_GUID_1.COMPANY_NAME AS CompanyName,
+  purchaseorder_0.GROSS_AMOUNT AS POGrossAmount,
+  purchaseorder_0.CURRENCY_CODE AS POCurrency,
+  ITEMS_3.PO_ITEM_POS AS ItemPosition,
+  PRODUCT_GUID_4.PRODUCT_ID AS ProductId,
+  PRODUCT_GUID_4.DESCRIPTION AS ProductDesc,
+  ADDRESS_GUID_2.CITY AS City,
+  ADDRESS_GUID_2.COUNTRY AS Country,
+  ITEMS_3.GROSS_AMOUNT AS ItemGrossAmount,
+  ITEMS_3.NET_AMOUNT AS ItemAmount
+FROM ((((india_db_transaction_purchaseorder AS purchaseorder_0 LEFT JOIN india_db_master_businesspartner AS PARTNER_GUID_1 ON purchaseorder_0.PARTNER_GUID_NODE_KEY = PARTNER_GUID_1.NODE_KEY) LEFT JOIN india_db_master_address AS ADDRESS_GUID_2 ON PARTNER_GUID_1.ADDRESS_GUID_NODE_KEY = ADDRESS_GUID_2.NODE_KEY) LEFT JOIN india_db_transaction_poitems AS ITEMS_3 ON (ITEMS_3.PARENT_KEY_NODE_KEY = purchaseorder_0.NODE_KEY)) LEFT JOIN india_db_master_product AS PRODUCT_GUID_4 ON ITEMS_3.PRODUCT_GUID_NODE_KEY = PRODUCT_GUID_4.NODE_KEY)

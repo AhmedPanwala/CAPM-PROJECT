@@ -1,0 +1,11 @@
+VIEW CatalogService_purchase_order AS SELECT
+  purchaseorder_0.CURRENCY_CODE,
+  purchaseorder_0.GROSS_AMOUNT,
+  purchaseorder_0.NET_AMOUNT,
+  purchaseorder_0.TAX_AMOUNT,
+  purchaseorder_0.NODE_KEY,
+  purchaseorder_0.PO_ID,
+  purchaseorder_0.PARTNER_GUID_NODE_KEY,
+  purchaseorder_0.LIFECYCLE_STATUS,
+  purchaseorder_0.OVERALL_STATUS
+FROM india_db_transaction_purchaseorder AS purchaseorder_0

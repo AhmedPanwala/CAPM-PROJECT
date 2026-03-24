@@ -1,0 +1,8 @@
+VIEW CDSViewsSrv_ItemView AS SELECT
+  ItemView_0.Vendor,
+  ItemView_0.ProductId,
+  ItemView_0.Correncycode,
+  ItemView_0.NetAmount,
+  ItemView_0.TexAmount,
+  ItemView_0.POStatus
+FROM india_db_CDSviews_ItemView AS ItemView_0

@@ -1,7 +1,6 @@
 using { india.db.master.worker } from '../db/dataModels';
 
 service NewCQLService {
-    @readonly
     entity readworker as projection on worker;
 
     @insertonly

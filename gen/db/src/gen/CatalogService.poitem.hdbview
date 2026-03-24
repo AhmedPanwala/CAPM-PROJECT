@@ -1,0 +1,10 @@
+VIEW CatalogService_poitem AS SELECT
+  poitems_0.CURRENCY_CODE,
+  poitems_0.GROSS_AMOUNT,
+  poitems_0.NET_AMOUNT,
+  poitems_0.TAX_AMOUNT,
+  poitems_0.NODE_KEY,
+  poitems_0.PARENT_KEY_NODE_KEY,
+  poitems_0.PO_ITEM_POS,
+  poitems_0.PRODUCT_GUID_NODE_KEY
+FROM india_db_transaction_poitems AS poitems_0

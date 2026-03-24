@@ -1,0 +1,15 @@
+COLUMN TABLE india_db_master_worker (
+  ID NVARCHAR(36) NOT NULL,
+  createdAt TIMESTAMP,
+  createdBy NVARCHAR(255),
+  modifiedAt TIMESTAMP,
+  modifiedBy NVARCHAR(255),
+  firstName NVARCHAR(20),
+  lastname NVARCHAR(20),
+  gender NVARCHAR(1),
+  phonenumber NVARCHAR(13),
+  email NVARCHAR(30),
+  currency NVARCHAR(3),
+  salaryamount DECIMAL(15, 2),
+  PRIMARY KEY(ID)
+)

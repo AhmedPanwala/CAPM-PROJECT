@@ -1,34 +1,8 @@
-# CAP mycapm
-_out
-*.db
-*.sqlite
-connection.properties
-default-*.json
+node_modules/\n.env\n.env.json\n*.log
+
+# auto generated wildcard
+db/.env
+# auto generated wildcard
+gen/db/.env
+# added by cds
 .cdsrc-private.json
-gen/
-node_modules/
-target/
-
-# Web IDE, App Studio
-.che/
-.gen/
-
-# MTA
-*_mta_build_tmp
-*.mtar
-mta_archives/
-
-# Other
-.DS_Store
-*.orig
-*.log
-
-*.iml
-*.flattened-pom.xml
-
-# IDEs
-# .vscode
-# .idea
-
-# @cap-js/cds-typer
-@cds-models

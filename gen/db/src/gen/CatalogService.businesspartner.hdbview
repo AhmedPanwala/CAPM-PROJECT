@@ -1,0 +1,15 @@
+VIEW CatalogService_businesspartner AS SELECT
+  businesspartner_0.createdAt,
+  businesspartner_0.createdBy,
+  businesspartner_0.modifiedAt,
+  businesspartner_0.modifiedBy,
+  businesspartner_0.NODE_KEY,
+  businesspartner_0.BP_ROLE,
+  businesspartner_0.EMAIL_ADDRESS,
+  businesspartner_0.PHONE_NUMBER,
+  businesspartner_0.FAX_NUMBER,
+  businesspartner_0.WEB_ADDRESS,
+  businesspartner_0.ADDRESS_GUID_NODE_KEY,
+  businesspartner_0.BP_ID,
+  businesspartner_0.COMPANY_NAME
+FROM india_db_master_businesspartner AS businesspartner_0

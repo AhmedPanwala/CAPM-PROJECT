@@ -86,3 +86,20 @@ Content-Type: application/json
 
 ###
 GET  http://localhost:4004/odata/v4/high-sal/getHighestSalary()  HTTP/1.1
+
+###
+POST http://localhost:4004/odata/v4/catalog/worker HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "Ahmed",
+  "lastname": "Panwala",
+  "gender": "M",
+  "phonenumber": "7868123456",
+  "email": "ahmed.panwala@gmail.com",
+  "currency": "INR",
+  "salaryamount": 50000.50
+}
+
+###
+GET  http://localhost:4004/odata/v4/catalog/worker  HTTP/1.1
